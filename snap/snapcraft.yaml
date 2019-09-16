@@ -7,7 +7,7 @@ description: |
   pre-configured Kubernetes resources.
 base: core18
 grade: stable
-confinement: classic
+confinement: devmode
 
 apps:
   helm:
