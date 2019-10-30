@@ -9,18 +9,18 @@ base: core18
 grade: stable
 confinement: strict
 
-plugs:
-  kube-config:
-    interface: personal-files
-    read:
-    - $HOME/.kube/config
-    - $HOME/.kube/config.lock
+#plugs:
+#  kube-config:
+#    interface: personal-files
+#    read:
+#    - $HOME/.kube/config
+#    - $HOME/.kube/config.lock
 
 apps:
   helm:
     command: helm
     plugs:
-    - kube-config
+#    - kube-config
     - network
     - network-bind
 
