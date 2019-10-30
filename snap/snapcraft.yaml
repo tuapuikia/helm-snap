@@ -1,5 +1,5 @@
 name: helm-snap
-version: '3.0.0-beta.3'
+version: '2.15.1'
 summary: The Kubernetes package manager
 description: |
   Helm is a tool for managing Kubernetes
@@ -13,8 +13,8 @@ plugs:
   kube-config:
     interface: personal-files
     read:
-    - $HOME/.kube
-    - $HOME/.minikube
+    - $HOME/.kube/config
+    - $HOME/.kube/config.lock
 
 apps:
   helm:
